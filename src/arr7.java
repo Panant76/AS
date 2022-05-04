@@ -5,18 +5,15 @@ import java.util.Arrays;
 public class arr7 {
     public static void main(String[] args) {
         int[] array = new int[]{12, 83, 17, 31, 2, 7, 93, 76, 61, 22, 45, 98, 53, 16, 13};
-          for (int i=0;i < array.length;i++) {
-            int value = array[i];
-            int n = i - 1;
-            for (; n >= 0; n--) {
-                if (value < array[n] && value %2==0) {
-                    array[n + 1] = array[n];
-                } else {
-                    break;
-                }
+        int j = 0;
+        for (int i=0;i < array.length-1;i++) {
+            if (array[i]%2==0) {
+                int t=array[j];
+                array[j] = array[i];
+                array[i] = t;
+                j+=2;
             }
-            array[n + 1] = value;
         }
-        System.out.print(Arrays.toString(array));
+             System.out.print(Arrays.toString(array));
     }
 }
