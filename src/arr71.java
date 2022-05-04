@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class arr71 {
     public static void main(String[] args) {
         int[] array = new int[]{12, 83, 17, 31, 2, 7, 93, 76, 61, 22, 45, 98, 53, 16, 13};
